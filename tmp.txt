@@ -1,0 +1,12 @@
+
+https://java.testcontainers.org/modules/databases/db2/
+
+        for (EntityType<?> entityType : entityManagerFactory.getMetamodel().getEntities()) {
+            log.error(entityType.getJavaType().getCanonicalName());
+        }
+
+
+        priceRepository.deleteById(10000000001L);
+        priceRepository.deleteById(10000000002L);
+        priceRepository.deleteById(10000000003L);
+        priceRepository.deleteById(10000000004L);

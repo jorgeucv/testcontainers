@@ -1,0 +1,16 @@
+# application properties for  integration test
+developer: Jorge Sanchez from application.yaml
+
+
+spring:
+  profiles:
+    active:
+      integration-test
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb
+    username: testuser
+    password: testpass
+  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update

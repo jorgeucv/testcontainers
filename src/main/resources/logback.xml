@@ -1,0 +1,15 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %highlight(%-5level) %msg %gray(%logger) %n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO"> <!-- Adjust the log level as needed -->
+        <appender-ref ref="CONSOLE"/>
+    </root>
+    <logger name="org.springframework" level="INFO"/>
+    <logger name="com.example.springbootapp" level="INFO"/>
+</configuration>
+<!--
+    <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+-->
